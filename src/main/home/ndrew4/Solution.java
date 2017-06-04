@@ -1,10 +1,13 @@
+package home.ndrew4;
+
 import java.util.ArrayList;
 
 /**
  * Created by Андрей on 31.05.2017.
+ * update 04.06.2017
  */
 public class Solution {
-    final private static int ERROR_CODE_PROCESSING_STRING = -1;
+    final public static int ERROR_CODE_PROCESSING_STRING = -1;
     final private static int MAX_VALUE_OF_12B = 4096;
     final private static int MAX_LENGTH_STRING = 200000;
 
@@ -18,8 +21,6 @@ public class Solution {
         }
         if (lengthS >= 2 && lengthS < MAX_LENGTH_STRING) {
             ArrayList<Integer> stack = new ArrayList<Integer>();
-
-
             for (int i=0; i < lengthS; i++) {
                 char symbol = S.charAt(i);
                 int lastElement = stack.size()-1;
